@@ -1,0 +1,78 @@
+package javaapplication3;
+
+/*
+
+* @autor guilherme_nones
+
+*/
+
+
+import java.util.Scanner;
+
+
+
+public class JavaApplication3 {
+    
+    
+    public static void main(String[] args) {
+    
+    
+    Scanner ler = new Scanner(System.in);    
+    
+    
+     /* Exercício 1)  Verificar a classe eleitoral de uma pessoa. Ler a idade. Verificar se a idade é menor que 16(não eleitor), entre 18 e 65 anos (eleitor obrigatório) ou 
+    idade igual a 16 ou 17 ou maior que 65 (eleitor facultativo). Informar a idade e mostrar na tela em qual grupo a idade se enquadra,
+        
+        int idade;
+        System.out.println("Informe a idade da pessoa");
+        idade = ler.nextInt();
+        
+            if (idade >= 18 & idade <= 65){
+                System.out.println("Voto obrigatório");
+            }else if (idade < 16){
+                System.out.println("Não é eleitor");
+            }else {
+                    System.out.println("Voto não");
+            }
+        
+       */       
+     
+    
+    /* Exercício 2) Escreva um algoritmo que calcule o IMC (Índice de Massa Corporal) de uma pessoa e mostre se em qual faixa da tabela abaixo ela se enquadra. 
+     Informar o peso e a altura da pessoa, calcular o IMC e mostrar em qual grupo se enquadra. Fórmula do IMC = peso / altura²
+    */
+        
+        double peso = 0;
+        double altura = 0;
+        double imc = 0; 
+        String nome; 
+                
+            System.out.println("Digite seu nome");
+            nome = ler.nextLine();
+            System.out.println("Digite seu peso");
+        peso = ler.nextDouble();
+            System.out.println("Digite seu altura");
+        altura = ler.nextDouble();
+            imc = peso / (altura * altura);
+            
+            if (imc < 18.5){
+                System.out.println("Abaixo do peso normal");
+            }else if (imc >= 18.5 & imc <= 24.9){
+                System.out.println("Peso normal");
+            }else if (imc >= 25.0 & imc <= 29.9){
+                System.out.println("Excesso de peso");
+            }else if (imc >= 30.0 & imc <= 34.9){
+                System.out.println("Obesidade Classe I");
+            }else if (imc >= 35.0 & imc <= 39.9){
+                System.out.println("Obesidade Classe II");
+            }else{
+                System.out.println("Obesidade Classe III");
+            }
+    
+        
+                
+        
+        
+    }
+    
+}
